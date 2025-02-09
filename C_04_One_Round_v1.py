@@ -1,6 +1,6 @@
 import random
 
-# Intialise rounds points
+# Initialise rounds points
 user_points = 0
 comp_points = 0
 double_user = "no"
@@ -29,4 +29,3 @@ print(f"Computer - Roll 1: {comp_one} \t| Roll 2: {comp_two} \t| Total: {comp_po
 # Let the user know if they qualify for double points
 if double_user == "yes":
     print("Great news - if you win, you will earn double points!")
-

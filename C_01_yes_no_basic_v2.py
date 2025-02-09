@@ -18,8 +18,8 @@ def yes_no(question):
             print("please enter yes/no")
 
 # Main routine
-
-want_instructions = yes_no("Do you want to see the instructions? ")
-want_coffee = yes_no("Do you want coffee? ")
+while True:
+    want_instructions = yes_no("Do you want to see the instructions? ")
+    print(f"you chose {want_instructions}")
 
 print("we done")
