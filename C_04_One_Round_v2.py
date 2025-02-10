@@ -28,7 +28,7 @@ def make_statement(statement, decoration):
 # Main starts here...
 
 
-# roll the dice for the user and note if they got a double
+# Roll the dice for the user and note if they got a double
 initial_user = initial_points("user")
 initial_comp = initial_points("Comp")
 
@@ -50,7 +50,7 @@ player_2_points = comp_points
 
 # if user has fewer points, they start the game
 if user_points < comp_points:
-    print("You start because your initial roll was less than the computer\n")
+    print("You start because your initial roll was less than the computer")
 
 # if the user and computer roll equal points, the users is player 1...
 elif user_points == comp_points:
@@ -63,14 +63,14 @@ else:
 
 # loop until we have a winner...
 while player_1_points < 13 and player_2_points < 13:
-    print()
-    input("Press <enter> to continue this round\n")
+
+    input("\nPress <enter> to continue this round")
 
     # first person rolls the die and score is updated
     player_1_roll = random.randint(1, 6)
     player_1_points += player_1_roll
 
-    print(f"{first}: Rolled a {player_1_roll} - has {player_1_points} points")
+    print(f"\n{first}: Rolled a {player_1_roll} - has {player_1_points} points")
 
     # if the first person's score is over 13, end the round
     if player_1_points >= 13:
